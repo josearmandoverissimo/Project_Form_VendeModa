@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form</title>
+  <!-- FONTS -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&family=Ubuntu:wght@700&display=swap"
+    rel="stylesheet">
+
+
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+
+
+  <link rel="stylesheet" href="./styles.css">
+
+  <script src="./script.js" defer></script>
+
+  <!-- <link rel="stylesheet" href="https://fabricadecursos-siteoficial.com/Project_Form/styles.css">
+
+  <script src="https://fabricadecursos-siteoficial.com/Project_Form/script.js" defer></script> -->
+
+  <!-- TESTE ACORDEON -->
+  <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+  <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <!------ Include the above in your HEAD tag ---------->
+
+  <script src="//cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
+</head>
+
+<body>
+  <!-- Borda do top -->
+  <div id="borda" class="d-flex justify-content-center align-items-center">
+    <img src="./img/vendemoda-logo.svg" alt="" class="img-fluid text-center" >
+  </div>
+  <!-- /Borda do top FIM-->
+  <header class="container">
+    <!-- Container 1 com as informações iniciais -->
+    <div class="container margintop">
+      <!-- ROW 1 -->
+      <div class="row d-flex justify-content-around">
+        <!-- 1 Columa com tamanho de 5 dentro do row -->
+        <div class="col-md-6 container1 d-none d-sm-block ">
+          <h2 class="center">Aumente a produtividade e <br> PARE de perder vendas.</h2>
+        </div>
+        <!-- /1 Coluna com tamanho de 5 dentro da row 1 FIM-->
+
+        <!-- 2 Coluna com tamanho de 5 dentro da row 1 -->
+        <div class="d-flex col-md-5 container2 flex-column ">
+          <span>Oferta Por Tempo Limitada</span>
+          <span class="din">GRÁTIS</span>
+          <span id="din2">Mais de 1.000 Lojas já Utilizam o Nosso Catálogo</span>
+        </div>
+        <!-- /2 Coluna com tamanho de 5 dentro da row 1 FIM-->
+      </div>
+      <!-- /ROW 1 FIM -->
+    </div>
+    <!-- /Container 1 com as informações iniciais -->
+
+    <!-- Container 2 com textos e fotos + Formulário -->
+    <div class="container">
+      <div class="row d-flex justify-content-around ">
+        <div class=" col-md-6 container3 ">
+          <p>Já são mais de 500 marcas de atacado contando com a Vesti para aumentar a produtividade comercial
+            e
+            escalar suas vendas online.</p>
+          <p>
+            Nosso planos foram pensados para cada tamanho de confecção. Por isso, nosso time de consultores
+            especialistas em vendas precisam entender melhor seu negócio e o que você busca.
+          </p>
+
+          <p>
+            A partir disso e se fizer sentido, vamos apresentar uma solução personalizada. Caso contrário,
+            vamos
+            compartilhar boas práticas, sugerir um direcionamento para sua operação.
+          </p>
+          <p>
+            Parece justo? Preencha ao lado e converse conosco!
+          </p>
+          <!-- Aqui onde o cara acha ouro -->
+          <img src="img/IMAGE-MARCAS-MC.png" class="img-fluid img-marcas" alt="">
+        </div>
+        <div class="d-flex col-md-5 container4 justify-content-center ">
+          <div class="">
+            <!-- FORM -->
+            <form action="" class="" id="form-container">
+              <div class="form-floating mb-3">
+                <input type="text" class="form-control" id="name" name="name" placeholder="Digite seu nome">
+                <label for="lastname" class="form-label">Digite o seu nome e sobrenome</label>
+              </div>
+              <div class="form-floating mb-3">
+                <input type="text" class="form-control" id="lastname" name="lastname"
+                  placeholder="Digite seu sobrenome">
+                <label for="lastname" class="form-label">Digite seu e-mail de trabalho</label>
+              </div>
+
+              <div class="form-floating mb-3">
+                <input type="email" class="form-control " id="email" name="email" placeholder="Digite seu nome">
+                <label for="email" class="form-label">Seu melhor telefone (com DDD)</label>
+              </div>
+
+              <div class="form-floating mb-3">
+                <input type="email" class="form-control" id="email" name="email" placeholder="Digite seu nome">
+                <label for="email" class="form-label">Instagram da sua marca</label>
+              </div>
+              <div class="form-floating mb-3">
+                <input type="password" class="form-control" id="password" name="password"
+                  placeholder="Digite a sua senha">
+                <label for="password" class="form-label">Quantos vendedores vendem pelo whatsapp</label>
+              </div>
+
+              <div class="mb-3">
+                <label for="confirmpassword" class="form-label"><span>Você é:</span>
+                  <div class="form-text" id="emailHelp">ATENÇÃO! Nós só atendemos quem vende atacado.
+                  </div>
+
+                </label>
+
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="opcao1">
+                  <label class="form-check-label " for="exampleRadios1">
+                    Fabricante de moda
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="opcao2">
+                  <label class="form-check-label" for="exampleRadios2">
+                    Revendedor de moda
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios3" value="option3">
+                  <label class="form-check-label" for="exampleRadios3">
+                    Representante / Guia / Corretor / Assessor
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios3" value="option3">
+                  <label class="form-check-label" for="exampleRadios3">
+                    ERP / Parceiro
+                  </label>
+                </div>
+                <div class="">
+                  <div class="form-group green-border-focus col-12">
+                    <label for="">Como podemos te ajudar?</label>
+                    <textarea class="form-control " id="" rows="3"></textarea>
+                  </div>
+                </div>
+                <input type="submit" class="btn btn-primary d-flex" value="Enviar e receber contato">
+              </div>
+            </form>
+            <!-- /FORM FIM-->
+          </div>
+        </div>
+
+      </div>
+
+      <!-- /Container 2 com textos e fotos + Formulário FIM-->
+    </div>
+    <!-- FERRAMENTAS -->
+    <h2 id="ferramenta">A ferramenta certa para escalar vendas</h2>
+    <div class="container container5 d-flex justify-content-center align-items-center">
+      <div class="row d-flex ">
+        <div class="col-md-4 ">
+          <div class="item d-flex column align-items-center justify-content-center">
+            <img src="./img/celular.svg" alt="" class="img-fluid" id="img-3">
+            <span id="cortexto">Tenha uma ferramenta <br> especializada na venda atacado</span>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="item d-flex column align-items-center justify-content-center">
+            <img src="./img/relogio.svg" alt="" class="img-fluid" id="img-3">
+            <span id="cortexto">Economize tempo no <br> atendimento pelo WhatsApp
+            </span>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="item d-flex column align-items-center justify-content-center">
+            <img src="./img/config.svg" alt="" class="img-fluid" id="img-3">
+            <span id="cortexto">Faça o controle de estoque <br> com as nossas integrações
+            </span>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+    <!-- /FERRAMENTAS FIM-->
+  </header>
+
+  <!-- ACOORDEON -->
+  <div class="container-fluid container6" id="#acordion">
+    <h3 id="ferramenta2" class="text-center">Perguntas Frequentes</h3>
+    <p class="text-center">Confira as perguntas frequentes abaixo, ou se preferir, entre em contato conosco</p>
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <div class="accordion " id="">
+            <!-- <h2 class="accordion__title">animated Accordion!</h2> -->
+            <ul class="accordion__list">
+              <li class="accordion__item" id="">
+                <div class="accordion__itemTitleWrap" id="">
+                  <h3 class="accordion__itemTitle">O que é o Catálogo Virtual Vende Moda?</h3>
+                  <div class="accordion__itemIconWrap"><svg viewBox="0 0 24 24">
+                      <polyline fill="none" points="21,8.5 12,17.5 3,8.5 " stroke="#0062ff" stroke-miterlimit="10"
+                        stroke-width="2" />
+                    </svg></div>
+                </div>
+                <div class="accordion__itemContent">
+                  <p>É uma vitrine online para o seu negócio, onde seus clientes poderão ver seus produtos e fazer
+                    pedidos. O cliente acessa o link do seu catálogo, monta um pedido e te envia pelo WhatsApp, fazendo
+                    com que suas vendas ocorram de forma muito mais rápida, prática e organizada!
+                  </p>
+
+                </div>
+              </li>
+              <li class="accordion__item">
+                <div class="accordion__itemTitleWrap">
+                  <h3 class="accordion__itemTitle">Como faço para ter o Catálogo Virtual Vende Moda?</h3>
+                  <div class="accordion__itemIconWrap"><svg viewBox="0 0 24 24">
+                      <polyline fill="none" points="21,8.5 12,17.5 3,8.5 " stroke="#0062ff" stroke-miterlimit="10"
+                        stroke-width="2" />
+                    </svg></div>
+                </div>
+                <div class="accordion__itemContent">
+                  <p>É bem simples, basta acessar cadastro.vende.moda, preencher os seus dados seguindo o passo-a-passo
+                    e pronto! Após criado, o seu Catálogo Vende Moda já está pronto para uso. Se você encontrar alguma
+                    dúvida no cadastro, pode entrar em contato conosco pelo telefone (81) 9 xxxx-xxxx.</p>
+                </div>
+              </li>
+              <li class="accordion__item">
+                <div class="accordion__itemTitleWrap">
+                  <h3 class="accordion__itemTitle">Quanto custa?</h3>
+
+                  <div class="accordion__itemIconWrap"><svg viewBox="0 0 24 24">
+                      <polyline fill="none" points="21,8.5 12,17.5 3,8.5 " stroke="#0062ff" stroke-miterlimit="10"
+                        stroke-width="2" />
+                    </svg></div>
+                </div>
+                <div class="accordion__itemContent">
+                  <p>O Catálogo Vende Moda é totalmente GRÁTIS! Isso mesmo, você pode se cadastrar e utilizar o catálogo
+                    gratuitamente para oferecer uma melhor experiência de compra e venda para os seus clientes e
+                    vendedores.</p>
+                </div>
+              </li>
+              <li class="accordion__item">
+                <div class="accordion__itemTitleWrap">
+                  <h3 class="accordion__itemTitle">Tem limite de produtos, fotos ou pedidos?</h3>
+
+                  <div class="accordion__itemIconWrap"><svg viewBox="0 0 24 24">
+                      <polyline fill="none" points="21,8.5 12,17.5 3,8.5 " stroke="#0062ff" stroke-miterlimit="10"
+                        stroke-width="2" />
+                    </svg></div>
+                </div>
+                <div class="accordion__itemContent">
+                  <p>Não. Atualmente o Catálogo Vende Moda disponibiliza a melhor plataforma do mercado sem cobrança
+                    adicional por estes recursos, de forma ilimitada.</p>
+                </div>
+              </li>
+              <li class="accordion__item">
+                <div class="accordion__itemTitleWrap">
+                  <h3 class="accordion__itemTitle">Possui controle de estoque?</h3>
+                  <div class="accordion__itemIconWrap"><svg viewBox="0 0 24 24">
+                      <polyline fill="none" points="21,8.5 12,17.5 3,8.5 " stroke="#0062ff" stroke-miterlimit="10"
+                        stroke-width="2" />
+                    </svg></div>
+                </div>
+                <div class="accordion__itemContent">
+                  <p>Sim! Dentro do painel administrativo você pode ativar o gerenciamento de estoque de um produto para
+                    controlar a sua disponibilidade para os seus clientes.</p>
+                </div>
+              </li>
+              <li class="accordion__item">
+                <div class="accordion__itemTitleWrap">
+                  <h3 class="accordion__itemTitle">O cliente pode realizar pagamentos dentro da plataforma?</h3>
+
+                  <div class="accordion__itemIconWrap"><svg viewBox="0 0 24 24">
+                      <polyline fill="none" points="21,8.5 12,17.5 3,8.5 " stroke="#0062ff" stroke-miterlimit="10"
+                        stroke-width="2" />
+                    </svg></div>
+                </div>
+                <div class="accordion__itemContent">
+                  <p>Sim! Você pode ativar essa opção para permitir que seus clientes paguem pelos pedidos feitos
+                    através do seu catálogo. Esse pagamento pode acontecer quando você liberar o pedido para pagamento,
+                    ou assim que o cliente terminar de montar o pedido, de acordo com a preferência da sua marca. Entre
+                    em contato conosco através de um dos canais de atendimento para que possamos te ajudar a começar a
+                    receber pagamentos através do seu catálogo virtual.</p>
+                </div>
+              </li>
+              <li class="accordion__item">
+                <div class="accordion__itemTitleWrap">
+                  <h3 class="accordion__itemTitle">É possível ter múltiplos vendedores utilizando o catálogo Vende Moda?
+                  </h3>
+                  <div class="accordion__itemIconWrap"><svg viewBox="0 0 24 24">
+                      <polyline fill="none" points="21,8.5 12,17.5 3,8.5 " stroke="#0062ff" stroke-miterlimit="10"
+                        stroke-width="2" />
+                    </svg></div>
+                </div>
+                <div class="accordion__itemContent">
+                  <p>Sim! Cada vendedor terá um link único para enviar para os seus clientes. Assim, quando o cliente
+                    acessar o seu catálogo através do link de um dos seus vendedores, o pedido que ele montar será
+                    encaminhado apenas para o WhatsApp desse vendedor, e aparecerá apenas para ele no painel
+                    administrativo.</p>
+                </div>
+              </li>
+              <li class="accordion__item">
+                <div class="accordion__itemTitleWrap">
+                  <h3 class="accordion__itemTitle">Possui integração com ERP?</h3>
+                  <div class="accordion__itemIconWrap"><svg viewBox="0 0 24 24">
+                      <polyline fill="none" points="21,8.5 12,17.5 3,8.5 " stroke="#0062ff" stroke-miterlimit="10"
+                        stroke-width="2" />
+                    </svg></div>
+                </div>
+                <div class="accordion__itemContent">
+                  <p>Sim! Você só precisa entrar em contato conosco antes para que possamos realizar uma verificação
+                    prévia da disponibilidade da integração com o seu ERP, ou analisar a possibilidade de desenvolver
+                    uma integração. </p>
+                </div>
+              </li>
+              <li class="accordion__item">
+                <div class="accordion__itemTitleWrap">
+                  <h3 class="accordion__itemTitle">Precisa ter CNPJ para utilizar o Catálogo Vende Moda?</h3>
+                  <div class="accordion__itemIconWrap"><svg viewBox="0 0 24 24">
+                      <polyline fill="none" points="21,8.5 12,17.5 3,8.5 " stroke="#0062ff" stroke-miterlimit="10"
+                        stroke-width="2" />
+                    </svg></div>
+                </div>
+                <div class="accordion__itemContent">
+                  <p>Não! Você pode utilizar o Vende Moda mesmo que não possua CNPJ.</p>
+                </div>
+              </li>
+              <li class="accordion__item">
+                <div class="accordion__itemTitleWrap">
+                  <h3 class="accordion__itemTitle">Desejo uma funcionalidade que não consigo encontrar no Vende Moda,
+                    como faço para dar uma sugestão?</h3>
+                  <div class="accordion__itemIconWrap"><svg viewBox="0 0 24 24">
+                      <polyline fill="none" points="21,8.5 12,17.5 3,8.5 " stroke="#0062ff" stroke-miterlimit="10"
+                        stroke-width="2" />
+                    </svg></div>
+                </div>
+                <div class="accordion__itemContent">
+                  <p>O Vende Moda está em constante evolução para que possa atender às necessidades e melhorar o negócio
+                    do maior número possível de empresas do ramo da moda. Então, caso você tenha uma sugestão ou uma
+                    funcionalidade que gostaria muito que estivesse disponível no Vende Moda, entre em contato com a
+                    gente por meio de um dos nossos canais de atendimento. A sua sugestão pode se unir àquela de muitos
+                    outros usuários e se tornar um novo recurso disponível para todos no futuro. Aqui no Vende Moda você
+                    tem voz e ajuda a construir o melhor catálogo virtual para você e seus clientes.</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+
+        </div>
+      </div>
+    </div>
+
+
+  </div>
+  <!-- ACOORDEON -->
+
+
+</body>
+
+</html>

@@ -1,0 +1,461 @@
+/* -----------------------------------START HEADER----------------------------------- */
+
+/* Borda Azul do topo */
+#borda {
+  background-color: #042CA7;
+  height: 55px;
+  margin-bottom: 50px;
+}
+
+#borda .img-fluid {
+  height: 35px;
+  width: 500px;
+}
+
+.center {
+  /* Primeiro passo: definir um degradê como fundo */
+  background-image: linear-gradient(to right, #7540D2, #2BE1AC);
+
+  /* Segundo passo: apagar do fundo tudo que não estiver imediatamente atrás de texto */
+  background-clip: text;
+  -webkit-background-clip: text;
+  /* Alguns navegadores precisam do prefixo */
+
+  /* Terceiro passo: apagar o texto, deixando apenas o fundo atrás dele */
+  -webkit-text-fill-color: transparent;
+
+  /* Cor que contraste com o degradê, caso o navegador não suporte `background-clip: text` */
+  color: black;
+
+}
+
+/* Estilização do container 1 que conta com o H2 */
+.container1 {
+  height: 200px;
+}
+
+
+/* Estilização do container 2 que mostra o conteúdo com valor */
+.container2 {
+  border-style: groove;
+  border-width: 1px 1px 1px 1px;
+  border-color: #5A39A2;
+  border-radius: 10px 10px 10px 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+}
+
+
+/* Dinheiro 2 container*/
+.din {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 48px;
+  font-weight: 700;
+  color: #36DB9F;
+  margin: 0;
+  padding: 0;
+}
+
+/* -----------------------------------AND HEADER----------------------------------- */
+
+/* ----------------------------------START MAIN--------------------------------------*/
+
+/* Estilização do container 3 que mostra o conteúdo com valor */
+.container3 {
+  height: 700px;
+  margin-top: 70px;
+  /* background-color: aqua; */
+}
+
+
+/* Estilização do container 4 que mostra o conteúdo com valor */
+.container4 {
+  height: 800px;
+  margin-top: 70px;
+  /* background-color: rgb(255, 0, 174); */
+}
+
+
+/* CONTAINER DENTRO */
+/* este container é o que o formulário está dentro.*/
+.dentro {
+  /* background-color: rgb(0, 0, 0); */
+  width: 80%;
+}
+
+
+
+/* Estilização do Formulário */
+#form-container {
+
+  padding: 20px 20px 20px 20px;
+  background-color: #FFF;
+  border-style: solid;
+  border-width: 10px 10px 10px 10px;
+  border-color: #FFF;
+  border-radius: 20px 20px 20px 20px;
+  box-shadow: 0 0 24px 0 rgb(0 0 0 / 50%);
+  /* width: 416px; */
+  height: 100%;
+}
+
+
+/* Estilização dos buttons */
+.btn {
+  background: #35DB9F;
+  border-color: #35DB9F;
+  color: #FFFFFF;
+  font-size: 20px;
+  line-height: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  border-radius: 3px;
+  padding: 12px 24px;
+  margin: 0;
+  cursor: pointer;
+  display: inline-block;
+  font-weight: 600;
+  position: relative;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  transition: all .15s linear;
+  margin-top: 15px;
+}
+
+.btn.btn-primary {
+  width: 100%;
+  background: #35DB9F;
+  border-color: #35DB9F;
+  height: 47px;
+  font-size: 19px;
+  font-weight: 800;
+}
+
+.btn-primary:hover {
+  transition: all 0.5s;
+  cursor: pointer;
+
+}
+
+
+.btn.btn-primary:hover {
+  transform: scale(1.03);
+  background-color: #35DB9F;
+}
+
+
+
+/* Margin do textarea */
+.green-border-focus {
+  margin-top: 20px;
+}
+
+/* Color da borda do textarea */
+.green-border-focus .form-control:focus {
+  border: 1px solid #36DB9F;
+  box-shadow: 0 0 0 0.2rem rgba(139, 195, 74, .25);
+
+}
+
+.form-floating .form-control:focus {
+  border: 1px solid #36DB9F;
+  box-shadow: 0 0 0 0.2rem rgba(139, 195, 74, .25);
+
+}
+
+
+/* -----------------------------------AND MAIN----------------------------------- */
+
+
+/* Espaçamento do segundo container */
+.center {
+  padding-top: 69px;
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 35px;
+  font-weight: 900;
+}
+
+/* /Espaçamento do segundo container FIM*/
+
+
+
+
+
+/* Ordem para responsividade */
+.order1 {
+  order: 1;
+}
+
+.order2 {
+  order: 2;
+}
+
+.order3 {
+  order: 3;
+}
+
+
+
+/* Estilização das ferramentas */
+.item {
+  height: 220px;
+  width: 350px;
+}
+
+#img-3 {
+  max-width: 100px;
+  max-height: 100px;
+}
+
+/* Texto das ferramentas */
+#ferramenta {
+  color: #5A39A2;
+  padding-top: 80px;
+  padding-bottom: 30px;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+#ferramenta2 {
+  color: #5A39A2;
+  padding-top: 15px;
+  padding-bottom: 5px;
+  font-weight: 600;
+  font-size: 35px;
+}
+
+
+.column {
+  flex-direction: column;
+}
+
+#cortexto {
+  font-weight: 700;
+  line-height: 1.2;
+  color: inherit;
+  text-align: center;
+  padding-top: 10px;
+}
+
+/* /Estilização das ferramentas FIM*/
+
+/* Estilização acordeon container6 */
+.container6 {
+  background-color: #F7F9FB;
+  height: 1000px;
+}
+
+.container6 p {
+  font-size: 16px;
+}
+
+/* -----------------------------------START ACCORDION----------------------------------- */
+.accordion {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.accordion__title {
+  font-family: 'industry', sans-serif;
+  font-weight: 300;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 1.125em;
+}
+
+.accordion__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.accordion__item {
+  /* border-bottom: 1px solid #000; */
+  visibility: hidden;
+  padding-bottom: 10px;
+}
+
+.accordion__item:last-child {
+  border-bottom: 0;
+}
+
+.accordion__item.is-active .accordion__itemTitleWrap::after {
+  -webkit-transform: translateX(-20%);
+  transform: translateX(-20%);
+}
+
+.accordion__item.is-active .accordion__itemIconWrap {
+  -webkit-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+
+/* Título do accordeon */
+.accordion__itemTitleWrap {
+  display: flex;
+  height: 3.5em;
+  align-items: center;
+  padding: 0 1em;
+  color: #042CA7;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  /* border-style: solid;
+    border-width: 2px 2px 2px 2px;
+    border-color: #0062ff; */
+  border-radius: 100px 100px 100px 100px;
+}
+
+.accordion__itemTitleWrap.accordion__itemTitleWrap:hover {
+  border-style: solid;
+  border-width: 1px 1px 1px 1px;
+  border-color: #36DB9F;
+}
+
+.accordion__itemTitleWrap::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 200%;
+  height: 100%;
+  background: #fff;
+  /* background: linear-gradient(45deg, #3bade3 0%, #576fe6 25%, #9844b7 51%, #ff357f 100%); */
+  background: linear-gradient(45deg, #fff);
+  background-color: #ffffff;
+  z-index: 1;
+  transition: -webkit-transform .4s ease;
+  transition: transform .4s ease;
+  transition: transform .4s ease, -webkit-transform .4s ease;
+  background-image: black 0%;
+
+}
+
+.accordion__itemTitleWrap.is-active::after,
+.accordion__itemTitleWrap:hover::after {
+  -webkit-transform: translateX(-20%);
+  transform: translateX(-20%);
+}
+
+.accordion__itemIconWrap {
+  width: 1.25em;
+  height: 1.25em;
+  margin-left: auto;
+  position: relative;
+  z-index: 10;
+}
+
+.accordion__itemTitle {
+  margin: 0;
+  font-family: 'industry', sans-serif;
+  font-weight: 300;
+  font-size: 1em;
+  position: relative;
+  z-index: 10;
+}
+
+.accordion__itemContent {
+  font-size: 0.875em;
+  height: 0;
+  overflow: hidden;
+  background-color: #fff;
+  padding: 0 1.25em;
+}
+
+.accordion__itemContent p {
+  margin: 2em 0;
+}
+
+.accordion h3 {
+  font-weight: 600;
+}
+
+
+.form-check input[type=radio]:checked {
+  background-color: #36DB9F;
+  border-color: #36DB9F;
+}
+
+/* -----------------------------------AND ACCORDION----------------------------------- */
+
+/* -----------------------------------START TEXTOS ESTILIZAÇÕES----------------------------------- */
+
+/* Distancia a logo com as marcas do texto que fica na parte de cima. */
+.img-marcas {
+  padding-top: 50px;
+}
+
+/* Estilização texto */
+p {
+  font-family: "Montserrat", Sans-serif;
+  font-size: 19px;
+  font-weight: 400;
+  font-family: 'Roboto', sans-serif;
+}
+
+/* Estilização do H2 */
+h2 {
+  font-size: 38px;
+  text-align: center;
+  font-weight: 900;
+  line-height: 1.5;
+  color: #333;
+}
+
+
+
+/* -----------------------------------AND TEXTOS ESTILIZAÇÕES----------------------------------- */
+
+/* -----------------------------------START MEDIA----------------------------------- */
+/* Responsividade e tamanho das divs */
+@media (max-width: 768px) {
+  .container2 {
+    width: 100%;
+    height: 250px;
+  }
+
+  .container3 {
+    order: 2;
+  }
+
+  /* .container4 {
+    order: 1;
+<<<<<<< HEAD
+    height: 1100px;
+  } */
+=======
+    height: 825px;
+  }
+>>>>>>> parent of 5622e71 (Formulario atualizado)
+
+  .dentro {
+    width: 100%;
+
+  }
+
+  .teste {
+    visibility: visible;
+  }
+
+  #ferramenta {
+    padding-top: 130px;
+  }
+
+  #din2 {
+    text-align: center;
+  }
+
+  .container6{
+    height: 820px;
+  }
+
+ 
+}
+
+@media (max-width:1199px) {
+  .container4 {
+    height: 825px;
+  }
+}
+
+/* -----------------------------------AND MEDIA----------------------------------- */
